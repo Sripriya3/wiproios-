@@ -1,0 +1,24 @@
+
+import Foundation
+
+var price: Double = 250.0
+var quantity: Int = 3
+let taxRate: Double = 0.18
+
+
+price = 300.0
+
+
+let subtotal = price * Double(quantity)
+let taxAmount = subtotal * taxRate
+let total = subtotal + taxAmount
+
+var title = "Order"
+title = "Updated Order"
+
+print("Title: \(title)")
+print("Price: \(String(format: "%.2f", price))")
+print("Quantity: \(quantity)")
+print("Subtotal: \(String(format: "%.2f", subtotal))")
+print("Tax: \(String(format: "%.2f", taxAmount))")
+print("Total including tax: \(String(format: "%.2f", total))")
